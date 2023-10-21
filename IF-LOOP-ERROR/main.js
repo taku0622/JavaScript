@@ -8,5 +8,8 @@ let maybeOk = true;
 //   console.log("NO!");
 // }
 
-ok = 1 === 1;
-console.log(ok);
+const coffee1 = { name: "black", size: "small" };
+const coffee2 = { name: "black", size: "small" };
+
+console.log(coffee1 === coffee2); // false
+console.log(coffee1 == coffee2); // false
