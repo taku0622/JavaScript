@@ -13,3 +13,9 @@ const coffee2 = { name: "black", size: "small" };
 
 console.log(coffee1 === coffee2); // false
 console.log(coffee1 == coffee2); // false
+
+const fruits1 = ["apple", "banana"];
+const fruits2 = ["apple", "banana"];
+
+console.log(fruits1 === fruits2); // false
+console.log(fruits1 == fruits2); // false
