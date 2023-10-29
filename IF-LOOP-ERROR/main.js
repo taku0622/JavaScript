@@ -28,3 +28,4 @@ let maybeOk = true;
 const inputUser = ''
 const userName = inputUser || 'sampleName';
 console.log(userName);
+
