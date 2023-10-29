@@ -25,5 +25,6 @@ let maybeOk = true;
 // ok = true || false;
 // console.log(ok); // true
 
-const userName = "inputUser" || 'sampleName';
+const inputUser = ''
+const userName = inputUser || 'sampleName';
 console.log(userName);
