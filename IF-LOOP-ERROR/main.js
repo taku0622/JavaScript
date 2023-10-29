@@ -20,7 +20,7 @@ let maybeOk = true;
 // console.log(fruits1 === fruits2); // false
 // console.log(fruits1 == fruits2); // false
 
-ok = true && false; // false
-console.log(ok);
-ok = true || false; // true
-console.log(ok);
+ok = 'hello' && 'ok'; // 0
+console.log(ok); // false
+ok = true || false;
+console.log(ok); // true
