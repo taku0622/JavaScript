@@ -69,6 +69,7 @@ const userName = inputUser || 'sampleName';
 //   count++;
 // } while (count < 10);
 
-for (let count = 0; count < 10; count++) {
-  console.log("for :" + count);
+for (let count = 0, i = 0; count < 10; count++, i++) {
+  console.log("count :" + count);
+  console.log("i :" + i);
 }
