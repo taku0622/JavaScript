@@ -27,5 +27,15 @@ let maybeOk = true;
 
 const inputUser = ''
 const userName = inputUser || 'sampleName';
-console.log(userName);
+// console.log(userName);
 
+function vegetableColor(vegetable) {
+  if (vegetable === "tomato") {
+    console.log('tomato is red.');
+  } else if (vegetable === "pumpkin") {
+    console.log('pumpkin is orange.');
+  } else if (vegetable === "onion") {
+    console.log('onion is white.');
+  }
+}
+vegetableColor('onion')
