@@ -69,7 +69,16 @@ const userName = inputUser || 'sampleName';
 //   count++;
 // } while (count < 10);
 
-for (let count = 0, i = 0; count < 10; count++, i++) {
-  console.log("count :" + count);
-  console.log("i :" + i);
+// for (let count = 0, i = 0; count < 10; count++, i++) {
+//   console.log("count :" + count);
+//   console.log("i :" + i);
+// }
+
+const fruits = ['apple', 'banana', 'grape', 'orange', 'mango'];
+// for (let i = 0; i < fruits.length; i++) {
+//   console.log(fruits[i]);
+// }
+
+for (const fruit of fruits) {
+  console.log(fruit);
 }
