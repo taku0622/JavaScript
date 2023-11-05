@@ -30,12 +30,24 @@ const userName = inputUser || 'sampleName';
 // console.log(userName);
 
 function vegetableColor(vegetable) {
-  if (vegetable === "tomato") {
-    console.log('tomato is red.');
-  } else if (vegetable === "pumpkin") {
-    console.log('pumpkin is orange.');
-  } else if (vegetable === "onion") {
-    console.log('onion is white.');
+  switch (vegetable) {
+    case 'tomato':
+      console.log('tomato is red.');
+      break;
+    case 'pumpkin':
+      console.log('pumpkin is orange.');
+      break;
+    case 'onion':
+      console.log('onion is white.');
+      break;
+
   }
+  // if (vegetable === "tomato") {
+  //   console.log('tomato is red.');
+  // } else if (vegetable === "pumpkin") {
+  //   console.log('pumpkin is orange.');
+  // } else if (vegetable === "onion") {
+  //   console.log('onion is white.');
+  // }
 }
 vegetableColor('onion')
