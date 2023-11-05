@@ -29,25 +29,32 @@ const inputUser = ''
 const userName = inputUser || 'sampleName';
 // console.log(userName);
 
-function vegetableColor(vegetable) {
-  switch (vegetable) {
-    case 'tomato':
-      console.log('tomato is red.');
-      break;
-    case 'pumpkin':
-      console.log('pumpkin is orange.');
-      break;
-    case 'onion':
-      console.log('onion is white.');
-      break;
+// function vegetableColor(vegetable) {
+//   let color = "";
+//   switch (vegetable) {
+//     case 'tomato':
+//       color = 'red';
+//       break;
+//     case 'carrot':
+//     case 'pumpkin':
+//       color = 'orange';
+//       break;
+//     case 'onion':
+//       color = 'white';
+//       break;
+//     default:
+//       color = 'not found';
+//       break;
+//   }
+//   console.log(`${vegetable} is ${color}`);
+// }
+// if (vegetable === "tomato") {
+//   console.log('tomato is red.');
+// } else if (vegetable === "pumpkin") {
+//   console.log('pumpkin is orange.');
+// } else if (vegetable === "onion") {
+//   console.log('onion is white.');
+// }
 
-  }
-  // if (vegetable === "tomato") {
-  //   console.log('tomato is red.');
-  // } else if (vegetable === "pumpkin") {
-  //   console.log('pumpkin is orange.');
-  // } else if (vegetable === "onion") {
-  //   console.log('onion is white.');
-  // }
-}
-vegetableColor('onion')
+// vegetableColor('carrot');
+
