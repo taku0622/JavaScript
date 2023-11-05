@@ -58,3 +58,13 @@ const userName = inputUser || 'sampleName';
 
 // vegetableColor('carrot');
 
+let count = 0;
+while (count < 10) {
+  console.log("while: " + count);
+  count++;
+}
+
+do {
+  console.log("do-while: " + count);
+  count++;
+} while (count < 10);
