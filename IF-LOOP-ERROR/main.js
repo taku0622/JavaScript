@@ -74,7 +74,7 @@ const userName = inputUser || 'sampleName';
 //   console.log("i :" + i);
 // }
 
-const fruits = ['apple', 'banana', 'grape', 'orange', 'mango'];
+// const fruits = ['apple', 'banana', 'grape', 'orange', 'mango'];
 // for (let i = 0; i < fruits.length; i++) {
 //   console.log(fruits[i]);
 // }
@@ -88,6 +88,13 @@ const coffee = {
   size: 350,
   isHot: true,
 };
-for (const key in fruits) {
-  console.log(fruits[key]);
+coffeepoint: if (true) {
+  for (const key in coffee) {
+    if (key === 'size') {
+      console.log('break!!');
+      break coffeepoint;
+    }
+    console.log(key);
+    console.log(coffee[key]);
+  }
 }
