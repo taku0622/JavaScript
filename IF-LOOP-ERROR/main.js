@@ -88,7 +88,6 @@ const coffee = {
   size: 350,
   isHot: true,
 };
-
-for (const key in coffee) {
-  console.log(coffee[key]);
+for (const key in fruits) {
+  console.log(fruits[key]);
 }
