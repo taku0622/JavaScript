@@ -30,5 +30,8 @@
 // }
 // console.log(sayHiAnonymous('Taro'));
 
-const sayHiArrow = name => `Hi ${name} !`;
-console.log(sayHiArrow('Jiro'));  // Hi Jiro !
+const person = (name) => ({
+  name: name,
+  age: 16,
+});
+console.log(person('Jiro').age);  // 16
