@@ -13,6 +13,5 @@ const sayHi = function hi() { // 名前付き関数
 const sayHello = function () {  // 無名関数 
   return "hello"
 }
-
 console.log(sayHi());     // hi
 console.log(sayHello());  // hello
