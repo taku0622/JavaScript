@@ -79,6 +79,16 @@ const fruits = ['apple', 'banana', 'grape', 'orange', 'mango'];
 //   console.log(fruits[i]);
 // }
 
-for (const fruit of fruits) {
-  console.log(fruit);
+// for (const fruit of fruits) {
+//   console.log(fruit);
+// }
+
+const coffee = {
+  name: 'Caffe latte',
+  size: 350,
+  isHot: true,
+};
+
+for (const key in coffee) {
+  console.log(coffee[key]);
 }
