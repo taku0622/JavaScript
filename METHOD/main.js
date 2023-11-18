@@ -17,10 +17,10 @@
 // }
 // console.log(sayHello());  // hello
 
-const person = {
-  name: "Taro",
-  sayHi: function () {  // メソッド
-    return "Hi"
-  },
-};
-console.log(person.sayHi());  // Hi
+// const person = {
+//   name: "Taro",
+//   sayHi: function () {  // メソッド
+//     return "Hi"
+//   },
+// };
+// console.log(person.sayHi());  // Hi
