@@ -24,3 +24,11 @@
 //   },
 // };
 // console.log(person.sayHi());  // Hi
+
+// const sayHiAnonymous = function (name) { // 無名関数
+//   return `Hi ${name} !`;
+// }
+// console.log(sayHiAnonymous('Taro'));
+
+const sayHiArrow = name => `Hi ${name} !`;
+console.log(sayHiArrow('Jiro'));  // Hi Jiro !
