@@ -32,3 +32,4 @@
 
 const sayHiArrow = (name = 'anonymous') => `Hi ${name} !`;
 console.log(sayHiArrow());  // Hi anonymous !
+
