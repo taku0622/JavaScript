@@ -41,4 +41,12 @@ let sum = (a, b, ...nums) => {
   for (num of nums) { total += num }
   return a + b + total;               // 21
 }
-console.log(sum(1, 2, 3, 4, 5, 6));
+// console.log(sum(1, 2, 3, 4, 5, 6));
+
+let substract = (a, b, callback) => {
+  let result = a - b;
+  callback(result);
+};
+substract(4, 3, (result) => {
+  console.log(result)           // 1
+});
