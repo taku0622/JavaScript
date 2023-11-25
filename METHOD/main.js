@@ -47,7 +47,10 @@ let substract = (a, b, callback) => {
   let result = a - b;
   callback(result);
 };
+let v = 0;
 substract(4, 3, (result) => {
-  console.log(result)           // 1
+  v = result;          // 1
 });
 
+
+console.log(v);
