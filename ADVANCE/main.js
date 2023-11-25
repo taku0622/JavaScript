@@ -19,7 +19,6 @@ let genetatePerson = (name) => {
     },
   };
 };
-
 const jiro = genetatePerson('Jiro');
 console.log(jiro.getAge()); // 0
 jiro.incrementAge();
