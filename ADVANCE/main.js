@@ -32,13 +32,23 @@
 // tom.incrementAge();
 // console.log(tom.getAge());  // 3
 
-let factorial = (n) => {
-  if (n === 0) return 1;
-  return n * factorial(n - 1);
-}
-console.log(factorial(3)); // 6
-console.log(factorial(5)); // 120
-console.log(factorial(0)); // 1
+// let factorial = (n) => {
+//   if (n === 0) return 1;
+//   return n * factorial(n - 1);
+// }
+// console.log(factorial(3)); // 6
+// console.log(factorial(5)); // 120
+// console.log(factorial(0)); // 1
 
-// 省略
-let factorial2 = (n) => n === 0 ? 1 : n * factorial2(n - 1);
+// // 省略
+// let factorial2 = (n) => n === 0 ? 1 : n * factorial2(n - 1);
+
+
+const array1 = ['a', 'b', 'c'];
+const array2 = ['d', 'e', 'f'];
+let list = [];
+list.push(...array1);
+console.log(list);
+
+list.push(...array2);
+console.log(list);
