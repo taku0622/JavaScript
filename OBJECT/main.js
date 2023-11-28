@@ -10,13 +10,9 @@ const person = {
   '-4': -4,                           // 負は文字列のみ
   [interests]: ['music', 'travel'],   // 変数
 };
-// key一覧：['3', 'name', 'age', 'greeting', 'const', 'current city', '3.1', '-4', 'interests']
-console.log(Object.keys(person));
-// value一覧：[3, 'John', 30, ƒ, 'const', 'Tokyo', 3.1, -4, Array(2)]
-console.log(Object.values(person));
-// key&valueが配列で一覧：[[key, value],[key, value],[key, value]...]
-console.log(Object.entries(person));
-
+person.name = 'Taku'; // 値変更
+person.gender = 'man' // 値追加
+delete person.age;    //  property(age)削除
 
 // console.log(person.name);       // John
 // console.log(person['name']);    // John
