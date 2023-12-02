@@ -70,17 +70,19 @@
 // console.log(book?.['title']); // []の参照：undefined
 
 
-// const car = {
-//   color: 'red',
-//   changeColor: function (color) {
-//     this.color = color;
-//   }
-// }
-// car.changeColor('white');
-// console.log(car.color);
+const car = {
+  color: 'red',
+  changeColor(color) { // キーを書かずにメソッド名から書く
+    this.color = color;
+  }
+}
+car.changeColor('white');
+console.log(car.color);
 
-sayThis = function (a, b) {
-  console.log(this, a, b);
-};
-sayThis = sayThis.bind({ hello: 'hello' }, 1, 2);
-sayThis();
+// sayThis = function (a, b) {
+//   console.log(this, a, b);
+// };
+// sayThis = sayThis.bind({ hello: 'hello' }, 1, 2);
+// sayThis();
+
+
