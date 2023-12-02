@@ -70,14 +70,14 @@
 // console.log(book?.['title']); // []の参照：undefined
 
 
-const car = {
-  color: 'red',
-  changeColor(color) { // キーを書かずにメソッド名から書く
-    this.color = color;
-  }
-}
-car.changeColor('white');
-console.log(car.color);
+// const car = {
+//   color: 'red',
+//   changeColor(color) { // キーを書かずにメソッド名から書く
+//     this.color = color;
+//   }
+// }
+// car.changeColor('white');
+// console.log(car.color);
 
 // sayThis = function (a, b) {
 //   console.log(this, a, b);
@@ -85,4 +85,16 @@ console.log(car.color);
 // sayThis = sayThis.bind({ hello: 'hello' }, 1, 2);
 // sayThis();
 
+const pastaCalculator = {
+  servingSize: 60,
+  member: 4,
+  get total() {
+    return this.servingSize * this.member;
+  },
+  set total(newValue) {
+    this.member = newValue / this.servingSize;
+  },
+};
+pastaCalculator.total = 600;
+console.log(pastaCalculator.member); // 240
 
