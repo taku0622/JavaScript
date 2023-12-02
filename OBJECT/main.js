@@ -15,12 +15,12 @@
 // delete person.age;    //  property(age)削除
 
 // propertyの省略
-const name = 'Espresso';
-const size = 350;
-const coffee = {
-  name,
-  size,
-};
+// const name = 'Espresso';
+// const size = 350;
+// const coffee = {
+//   name,
+//   size,
+// };
 // const coffee2 = {
 //   ...coffee,
 //   name: 'Latte',
@@ -45,11 +45,28 @@ const coffee = {
 // console.log(person[interests]); // ['music', 'travel']
 
 
-const o1 = { a: 1 };
-const o2 = { b: 2 };
-Object.assign(o1, o2);  // o1に結合される
-console.log(o1);        // {a: 1, b: 2}
+// const o1 = { a: 1 };
+// const o2 = { b: 2 };
+// Object.assign(o1, o2);  // o1に結合される
+// console.log(o1);        // {a: 1, b: 2}
 
 
-const newCoffee = Object.assign({}, coffee);
-console.log(newCoffee);
+// const newCoffee = Object.assign({}, coffee);
+// console.log(newCoffee);
+
+const book = {
+  title: 'JavaScriptBook',
+  price: 9.99,
+  auther: {
+    first: 'Michael',
+    last: 'Jordan'
+  },
+  isbn: 1234567890,
+}
+const {
+  title,
+  auther: { last },
+  publisher = 'NBA',
+  ...etc
+} = book;
+console.log(etc);  // {price: 9.99, isbn: 1234567890}
