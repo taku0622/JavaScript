@@ -62,11 +62,7 @@ const book = {
     last: 'Jordan'
   },
   isbn: 1234567890,
-}
-const {
-  title,
-  auther: { last },
-  publisher = 'NBA',
-  ...etc
-} = book;
-console.log(etc);  // {price: 9.99, isbn: 1234567890}
+};
+
+console.log('title' in book); // ture
+if (book.title !== undefined) console.log(true); // この挙動とほとんど一緒
