@@ -20,13 +20,20 @@ const size = 350;
 const coffee = {
   name,
   size,
+  nutritions: {
+    calories: 5,
+    suger: 0,
+  }
 };
 const coffee2 = {
-  ...coffee,        // スプレット構文：オブジェクト自体をコピー
-  name: 'Latte',    // 後に書けば上書き
+  ...coffee,
+  name: 'Latte',
+  nutritions: {
+    ...coffee.nutritions
+  },
 };
-console.log(coffee2); // {name: 'Latte', size: 350}
-
+coffee2.nutritions.calories = 180;
+console.log(coffee); // 値が変更しない
 // console.log(person.name);       // John
 // console.log(person['name']);    // John
 // console.log(person.greeting);   // hello
