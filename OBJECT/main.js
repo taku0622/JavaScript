@@ -70,3 +70,12 @@
 // console.log(book?.['title']); // []の参照：undefined
 
 
+const car = {
+  color: 'red',
+  changeColor: function (color) {
+    this.color = color;
+  }
+}
+car.changeColor('white');
+console.log(car.color);
+
