@@ -15,16 +15,12 @@
 // delete person.age;    //  property(age)削除
 
 // propertyの省略
-// const name = 'Espresso';
-// const size = 350;
-// const coffee = {
-//   name,
-//   size,
-//   nutritions: {
-//     calories: 5,
-//     suger: 0,
-//   }
-// };
+const name = 'Espresso';
+const size = 350;
+const coffee = {
+  name,
+  size,
+};
 // const coffee2 = {
 //   ...coffee,
 //   name: 'Latte',
@@ -51,5 +47,9 @@
 
 const o1 = { a: 1 };
 const o2 = { b: 2 };
-Object.assign(o1, o2);
-console.log(o1);
+Object.assign(o1, o2);  // o1に結合される
+console.log(o1);        // {a: 1, b: 2}
+
+
+const newCoffee = Object.assign({}, coffee);
+console.log(newCoffee);
