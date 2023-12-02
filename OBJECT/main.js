@@ -54,15 +54,19 @@
 // const newCoffee = Object.assign({}, coffee);
 // console.log(newCoffee);
 
-const book = {
-  title: 'JavaScriptBook',
-  price: 9.99,
-  auther: {
-    first: 'Michael',
-    last: 'Jordan'
-  },
-  isbn: 1234567890,
-};
+// const book = {
+//   title: 'JavaScriptBook',
+//   price: 9.99,
+//   auther: {
+//     first: 'Michael',
+//     last: 'Jordan'
+//   },
+//   isbn: 1234567890,
+// };
+// const book = null;
+// bookがnull, undefinedなら、undefined
+// bookがあれば、値を返す
+// console.log(book?.()); // 関数オブジェクト：undefined
+// console.log(book?.['title']); // []の参照：undefined
 
-console.log('title' in book); // ture
-if (book.title !== undefined) console.log(true); // この挙動とほとんど一緒
+
