@@ -15,25 +15,26 @@
 // delete person.age;    //  property(age)削除
 
 // propertyの省略
-const name = 'Espresso';
-const size = 350;
-const coffee = {
-  name,
-  size,
-  nutritions: {
-    calories: 5,
-    suger: 0,
-  }
-};
-const coffee2 = {
-  ...coffee,
-  name: 'Latte',
-  nutritions: {
-    ...coffee.nutritions
-  },
-};
-coffee2.nutritions.calories = 180;
-console.log(coffee); // 値が変更しない
+// const name = 'Espresso';
+// const size = 350;
+// const coffee = {
+//   name,
+//   size,
+//   nutritions: {
+//     calories: 5,
+//     suger: 0,
+//   }
+// };
+// const coffee2 = {
+//   ...coffee,
+//   name: 'Latte',
+//   nutritions: {
+//     ...coffee.nutritions
+//   },
+// };
+// coffee2.nutritions.calories = 180;
+// console.log(coffee); // 値が上書きされない
+
 // console.log(person.name);       // John
 // console.log(person['name']);    // John
 // console.log(person.greeting);   // hello
@@ -47,3 +48,8 @@ console.log(coffee); // 値が変更しない
 // console.log(person['3.1']);     // 3.1
 // console.log(person[interests]); // ['music', 'travel']
 
+
+const o1 = { a: 1 };
+const o2 = { b: 2 };
+Object.assign(o1, o2);
+console.log(o1);
