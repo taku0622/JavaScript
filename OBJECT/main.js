@@ -96,5 +96,5 @@ const pastaCalculator = {
   },
 };
 pastaCalculator.total = 600;
-console.log(pastaCalculator.member); // 240
+console.log(pastaCalculator.member); // 10
 
