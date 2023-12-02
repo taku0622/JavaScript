@@ -79,5 +79,9 @@
 // car.changeColor('white');
 // console.log(car.color);
 
+sayThis = function (a, b) {
+  console.log(this, a, b);
+}
 
-
+sayThis.call({ hello: 'hello' }, 1, 2);    // {hello: 'hello'} 1 2
+sayThis.apply({ hello: 'hello' }, [1, 2]); // {hello: 'hello'} 1 2
