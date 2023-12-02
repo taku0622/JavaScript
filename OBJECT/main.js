@@ -14,13 +14,18 @@
 // person.gender = 'man' // 値追加
 // delete person.age;    //  property(age)削除
 
+// propertyの省略
 const name = 'Espresso';
 const size = 350;
 const coffee = {
   name,
   size,
 };
-console.log(coffee);
+const coffee2 = {
+  ...coffee,        // スプレット構文：オブジェクト自体をコピー
+  name: 'Latte',    // 後に書けば上書き
+};
+console.log(coffee2); // {name: 'Latte', size: 350}
 
 // console.log(person.name);       // John
 // console.log(person['name']);    // John
