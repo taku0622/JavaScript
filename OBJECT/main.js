@@ -102,9 +102,20 @@ const pastaCalculator = {
   servingSize: 60,
   member: 4,
 };
-console.log(Object.getOwnPropertyDescriptor(pastaCalculator, 'servingSize'));
+Object.defineProperty(pastaCalculator, 'total', {
+  configurable: true,
+  enumerable: true,
+  get() {
+    return this.servingSize * this.member;
+  },
+  set(newValue) {
+    this.member = newValue / this.servingSize;
+  },
+});
+
+// console.log(Object.getOwnPropertyDescriptor(pastaCalculator, 'servingSize'));
 // {value: 60, writable: true, enumerable: true, configurable: true}
 // define propertyのvalue変更
-Object.defineProperty(pastaCalculator, 'servingSize', { value: 30 });
-console.log(Object.getOwnPropertyDescriptor(pastaCalculator, 'servingSize'));
+// Object.defineProperty(pastaCalculator, 'servingSize', { value: 30 });
+// console.log(Object.getOwnPropertyDescriptor(pastaCalculator, 'servingSize'));
 // {value: 30, writable: true, enumerable: true, configurable: true}
