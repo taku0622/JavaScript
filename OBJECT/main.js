@@ -85,16 +85,26 @@
 // sayThis = sayThis.bind({ hello: 'hello' }, 1, 2);
 // sayThis();
 
+// const pastaCalculator = {
+//   servingSize: 60,
+//   member: 4,
+//   get total() {
+//     return this.servingSize * this.member;
+//   },
+//   set total(newValue) {
+//     this.member = newValue / this.servingSize;
+//   },
+// };
+// pastaCalculator.total = 600;
+// console.log(pastaCalculator.member); // 10
+
 const pastaCalculator = {
   servingSize: 60,
   member: 4,
-  get total() {
-    return this.servingSize * this.member;
-  },
-  set total(newValue) {
-    this.member = newValue / this.servingSize;
-  },
 };
-pastaCalculator.total = 600;
-console.log(pastaCalculator.member); // 10
-
+console.log(Object.getOwnPropertyDescriptor(pastaCalculator, 'servingSize'));
+// {value: 60, writable: true, enumerable: true, configurable: true}
+// define propertyのvalue変更
+Object.defineProperty(pastaCalculator, 'servingSize', { value: 30 });
+console.log(Object.getOwnPropertyDescriptor(pastaCalculator, 'servingSize'));
+// {value: 30, writable: true, enumerable: true, configurable: true}
