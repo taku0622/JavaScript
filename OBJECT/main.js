@@ -112,7 +112,12 @@ Object.defineProperty(pastaCalculator, 'total', {
     this.member = newValue / this.servingSize;
   },
 });
-
+Object.preventExtensions(pastaCalculator);
+Object.seal(pastaCalculator);
+Object.isExtensible(pastaCalculator);
+Object.isSealed(pastaCalculator);
+Object.freeze(pastaCalculator);
+Object.isFrozen(pastaCalculator);
 // console.log(Object.getOwnPropertyDescriptor(pastaCalculator, 'servingSize'));
 // {value: 60, writable: true, enumerable: true, configurable: true}
 // define propertyのvalue変更
