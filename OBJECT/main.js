@@ -98,26 +98,26 @@
 // pastaCalculator.total = 600;
 // console.log(pastaCalculator.member); // 10
 
-const pastaCalculator = {
-  servingSize: 60,
-  member: 4,
-};
-Object.defineProperty(pastaCalculator, 'total', {
-  configurable: true,
-  enumerable: true,
-  get() {
-    return this.servingSize * this.member;
-  },
-  set(newValue) {
-    this.member = newValue / this.servingSize;
-  },
-});
-Object.preventExtensions(pastaCalculator);
-Object.seal(pastaCalculator);
-Object.isExtensible(pastaCalculator);
-Object.isSealed(pastaCalculator);
-Object.freeze(pastaCalculator);
-Object.isFrozen(pastaCalculator);
+// const pastaCalculator = {
+//   servingSize: 60,
+//   member: 4,
+// };
+// Object.defineProperty(pastaCalculator, 'total', {
+//   configurable: true,
+//   enumerable: true,
+//   get() {
+//     return this.servingSize * this.member;
+//   },
+//   set(newValue) {
+//     this.member = newValue / this.servingSize;
+//   },
+// });
+// Object.preventExtensions(pastaCalculator);
+// Object.seal(pastaCalculator);
+// Object.isExtensible(pastaCalculator);
+// Object.isSealed(pastaCalculator);
+// Object.freeze(pastaCalculator);
+// Object.isFrozen(pastaCalculator);
 // console.log(Object.getOwnPropertyDescriptor(pastaCalculator, 'servingSize'));
 // {value: 60, writable: true, enumerable: true, configurable: true}
 // define propertyのvalue変更
