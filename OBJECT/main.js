@@ -152,4 +152,4 @@ obj.__proto__ = {
   c: 3,
 };
 console.log(obj.__proto__);
-//{constructor: ƒ, __defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, …}
+// {c: 3}
