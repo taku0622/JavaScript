@@ -124,3 +124,32 @@
 // Object.defineProperty(pastaCalculator, 'servingSize', { value: 30 });
 // console.log(Object.getOwnPropertyDescriptor(pastaCalculator, 'servingSize'));
 // {value: 30, writable: true, enumerable: true, configurable: true}
+
+// const obj = {
+//   a: 1,
+//   b: 2,
+//   [[Prototype]]: p1,
+// }
+// const p1 = {
+//   c: 3,
+//   [[Prototype]]: p2,
+// }
+// const p2 = {
+//   d: 4,
+//   [[Prototype]]: null,
+// }
+// obj.a // 1
+// obj.b // 2
+// obj.c // 3
+// obj.d // 4
+// obj.e // undefined
+
+const obj = {
+  a: 1,
+  b: 2,
+};
+obj.__proto__ = {
+  c: 3,
+};
+console.log(obj.__proto__);
+//{constructor: ƒ, __defineGetter__: ƒ, __defineSetter__: ƒ, hasOwnProperty: ƒ, __lookupGetter__: ƒ, …}
