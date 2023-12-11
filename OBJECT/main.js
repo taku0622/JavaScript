@@ -144,12 +144,8 @@
 // obj.d // 4
 // obj.e // undefined
 
-const obj = {
-  a: 1,
-  b: 2,
-};
-Object.setPrototypeOf(obj, {
-  c: 3,
-});
-console.log(Object.getPrototypeOf(obj));
+const obj = Object.create({ c: 3 });
+obj.a = 1;
+obj.b = 2;
+console.log(obj.__proto__);
 // {c: 3}
