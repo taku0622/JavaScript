@@ -144,8 +144,22 @@
 // obj.d // 4
 // obj.e // undefined
 
-// const obj = Object.create({ c: 3 });
+// const obj = Object.create({ c: 3, 1: 4 });
 // obj.a = 1;
 // obj.b = 2;
-// console.log(obj.__proto__);
-// {c: 3}
+// console.log(Object.keys(obj)); // a b
+// keys, values, entries, getOwnPropertyNames などは
+// ptopertyTypeまで参照しない。
+
+// for (const key in obj) {
+//   console.log(key); // a b 1 c
+// }
+
+const coffee = {
+  name: 'Caffe latte',
+  size: 350,
+  isHot: true,
+};
+for (const key of Object.keys(coffee)) {
+  console.log(coffee[key]);
+};
