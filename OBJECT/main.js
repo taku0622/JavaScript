@@ -155,11 +155,11 @@
 //   console.log(key); // a b 1 c
 // }
 
-const coffee = {
-  name: 'Caffe latte',
-  size: 350,
-  isHot: true,
-};
-for (const key of Object.keys(coffee)) {
-  console.log(coffee[key]);
-};
+// const coffee = {
+//   name: 'Caffe latte',
+//   size: 350,
+//   isHot: true,
+// };
+// for (const key of Object.keys(coffee)) {
+//   console.log(coffee[key]);
+// };
