@@ -200,8 +200,9 @@ let o = { // プロパティ「a: 1」 追加
 };
 Object.prototype.hello = 'hello'　// prototype「hello: 'hello'」追加
 
-console.log(o.hasOwnProperty('a')); // prototypeまで確認しない
-console.log('a' in o);              // prototypeまで確認する
+console.log(o.hasOwnProperty('a')); // true
+console.log('a' in o);              // true
 
-console.log(o.hasOwnProperty('hello')); // prototypeまで確認しない
-console.log('hello' in o);              // prototypeまで確認する
+console.log(o.hasOwnProperty('hello')); // false：prototypeまで確認しない：ownはprototypeまで確認しない
+console.log(Object.prototype.hasOwnProperty.call(o, 'hello')) // 上の書き換え
+console.log('hello' in o);              // true：prototypeまで確認する
