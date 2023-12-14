@@ -194,8 +194,14 @@
 // console.log(user3);
 
 // let o = new Object({ hi: 'hi' });
-let o = {
+
+let o = { // プロパティ「a: 1」 追加
   a: 1,
 };
-console.log(o);
-console.log(o.hasOwnProperty('a'));
+Object.prototype.hello = 'hello'　// prototype「hello: 'hello'」追加
+
+console.log(o.hasOwnProperty('a')); // prototypeまで確認しない
+console.log('a' in o);              // prototypeまで確認する
+
+console.log(o.hasOwnProperty('hello')); // prototypeまで確認しない
+console.log('hello' in o);              // prototypeまで確認する
