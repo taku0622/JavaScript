@@ -212,8 +212,8 @@ class User { // 省略記法のメソッドのみ書ける
     this.name = name;
     this.age = age;
   }
-  greeting() { }
-  post() { }
+  get greeting() { }
+  set post(newValue) { }
 };
 const user1 = new User('Taku', 30);
 console.log(user1);     // User {name: 'Taku', age: 30}
