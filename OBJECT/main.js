@@ -195,14 +195,25 @@
 
 // let o = new Object({ hi: 'hi' });
 
-let o = { // プロパティ「a: 1」 追加
-  a: 1,
+// let o = { // プロパティ「a: 1」 追加
+//   a: 1,
+// };
+// Object.prototype.hello = 'hello'　// prototype「hello: 'hello'」追加
+
+// console.log(o.hasOwnProperty('a')); // true
+// console.log('a' in o);              // true
+
+// console.log(o.hasOwnProperty('hello')); // false：prototypeまで確認しない：ownはprototypeまで確認しない
+// console.log(Object.prototype.hasOwnProperty.call(o, 'hello')) // 上の書き換え
+// console.log('hello' in o);              // true：prototypeまで確認する
+
+class User { // 省略記法のメソッドのみ書ける
+  constructor(name, age) { // インスタンス作成時に真っ先に呼び出される特殊メソッド
+    this.name = name;
+    this.age = age;
+  }
+  greeting() { }
+  post() { }
 };
-Object.prototype.hello = 'hello'　// prototype「hello: 'hello'」追加
-
-console.log(o.hasOwnProperty('a')); // true
-console.log('a' in o);              // true
-
-console.log(o.hasOwnProperty('hello')); // false：prototypeまで確認しない：ownはprototypeまで確認しない
-console.log(Object.prototype.hasOwnProperty.call(o, 'hello')) // 上の書き換え
-console.log('hello' in o);              // true：prototypeまで確認する
+const user1 = new User('Taku', 30);
+console.log(user1);     // User {name: 'Taku', age: 30}
