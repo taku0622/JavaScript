@@ -207,14 +207,13 @@
 // console.log(Object.prototype.hasOwnProperty.call(o, 'hello')) // 上の書き換え
 // console.log('hello' in o);              // true：prototypeまで確認する
 
-class User {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
-  static greeting() {
-    console.log('Hello');
-  } // クラスメソッド
-};
-const user1 = new User('Taku', 30);
-console.log(User.greeting());
+// class User {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+//   static greeting() {
+//     console.log('Hello');
+//   } // クラスメソッド
+// };
+// console.log(User.greeting()); // Hello
