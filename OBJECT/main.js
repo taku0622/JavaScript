@@ -208,16 +208,17 @@
 // console.log('hello' in o);              // true：prototypeまで確認する
 
 class User {
-  id = 1993321;   // // フィールド
-  birthday = '1990/01//01'; // フィールド
-  static classId = 0;       // staticもいける
+  id = 1993321;
+  birthday = '1990/01//01';
+  #age = 0;
+  static classId = 0;
   constructor(name, age) {
     this.name = name;
-    this.age = age;
+    this.#age = age;
   }
-  greeting() { }
+  get age() {
+    return this.#age;
+  }
 };
-const user1 = new User('Taku', 25)
-console.log(user1.id);       // 1993321
-console.log(user1.birthday); // 1990/01//01
-console.log(User.classId);   // 0
+const user1 = new User('Taku', 25);
+console.log(user1.age);
