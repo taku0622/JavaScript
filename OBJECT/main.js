@@ -207,18 +207,37 @@
 // console.log(Object.prototype.hasOwnProperty.call(o, 'hello')) // 上の書き換え
 // console.log('hello' in o);              // true：prototypeまで確認する
 
-class User {
-  id = 1993321;
-  birthday = '1990/01//01';
-  #age = 0;
-  static classId = 0;
-  constructor(name, age) {
+// class User {
+//   id = 1993321;
+//   birthday = '1990/01//01';
+//   #age = 0;
+//   static classId = 0;
+//   constructor(name, age) {
+//     this.name = name;
+//     this.#age = age;
+//   }
+//   get age() {
+//     return this.#age;
+//   }
+// };
+// const user1 = new User('Taku', 25);
+// console.log(user1.age);
+
+class Animal {
+  age = 0;
+  constructor(age) {
+    this.age = age;
+  }
+  eat() { }
+}
+class Bird extends Animal {
+  name = 'pi';
+  constructor(age, name) {
+    super(age);
     this.name = name;
-    this.#age = age;
   }
-  get age() {
-    return this.#age;
-  }
-};
-const user1 = new User('Taku', 25);
-console.log(user1.age);
+  fly() { }
+}
+const bird = new Bird(3, 'peaker');
+console.log(bird);    // Bird {age: 3, name: 'peaker'}
+
