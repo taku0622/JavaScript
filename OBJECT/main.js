@@ -207,13 +207,14 @@
 // console.log(Object.prototype.hasOwnProperty.call(o, 'hello')) // 上の書き換え
 // console.log('hello' in o);              // true：prototypeまで確認する
 
-class User { // 省略記法のメソッドのみ書ける
-  constructor(name, age) { // インスタンス作成時に真っ先に呼び出される特殊メソッド
+class User {
+  constructor(name, age) {
     this.name = name;
     this.age = age;
   }
-  get greeting() { }
-  set post(newValue) { }
+  static greeting() {
+    console.log('Hello');
+  } // クラスメソッド
 };
 const user1 = new User('Taku', 30);
-console.log(user1);     // User {name: 'Taku', age: 30}
+console.log(User.greeting());
