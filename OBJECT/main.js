@@ -250,9 +250,15 @@ class Bird {
     console.log("eat from Bird");
   }
 }
-const bird = new Bird(3, 'peaker');
-console.log(bird.animal.age); // 3
-bird.animal.eat(); // eat from Animal
-bird.eat(); // eat from Animal \n eat from Bird
-Bird.fly(); // foo \n fly
+// const bird = new Bird(3, 'peaker');
+// console.log(bird.animal.age); // 3
+// bird.animal.eat(); // eat from Animal
+// bird.eat(); // eat from Animal \n eat from Bird
+// Bird.fly(); // foo \n fly
 
+class Car { }
+const car = new Car();
+console.log(car instanceof Car); // true
+class Taxi extends Car { }
+const taxi = new Taxi();
+console.log(taxi instanceof Car); // true
