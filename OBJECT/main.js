@@ -228,16 +228,21 @@ class Animal {
   constructor(age) {
     this.age = age;
   }
-  eat() { }
+  eat() {
+    console.log("eat from Animal");
+  }
 }
 class Bird extends Animal {
-  name = 'pi';
+  name = 'bird';
   constructor(age, name) {
     super(age);
     this.name = name;
   }
   fly() { }
+  eat() {
+    super.eat();
+    console.log("eat from Bird");
+  }
 }
 const bird = new Bird(3, 'peaker');
-console.log(bird);    // Bird {age: 3, name: 'peaker'}
-
+bird.eat(); // eat from Animal \n eat from Bird
