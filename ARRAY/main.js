@@ -11,13 +11,21 @@ let arrayLikeObj = {
 // console.log(Array.isArray(fruits)); // true
 // console.log(Array.isArray(arrayLikeObj)); // false
 
-let fruits = ['apple', 'banana'];
-fruits[3] = 'grape'
-delete fruits[3];
-fruits[10] = 'orange';
-console.log(fruits);  // (11) ['apple', 'banana', 空 × 8, 'orange']
-console.log(fruits.length); // 11 
-fruits.length = 2;
-console.log(fruits.length); // 2 
-console.log(fruits);  // (2) ['apple', 'banana']
+// let fruits = ['apple', 'banana'];
+// fruits[3] = 'grape'
+// delete fruits[3];
+// fruits[10] = 'orange';
+// console.log(fruits);  // (11) ['apple', 'banana', 空 × 8, 'orange']
+// console.log(fruits.length); // 11
+// fruits.length = 2;
+// console.log(fruits.length); // 2
+// console.log(fruits);  // (2) ['apple', 'banana']
 
+// let fruits = ['apple', , 'banana', , 'grape'];
+let fruits = Array.of('apple', 'banana', 'grape');
+for (const fruit of fruits) { // undefinedを含める。
+  console.log(fruit); // apple \n undefined \n banana \n undefined \n grape
+}
+for (const key in fruits) { // undefinedを含めない。
+  console.log(fruits[key]); // apple \n banana \n grape
+}
