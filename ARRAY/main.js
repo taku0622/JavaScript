@@ -29,3 +29,10 @@ for (const fruit of fruits) { // undefinedを含める。
 for (const key in fruits) { // undefinedを含めない。
   console.log(fruits[key]); // apple \n banana \n grape
 }
+
+let sum = (...nums) => {
+  console.log(nums);
+}
+let nums = [1, 2, 3, 4, 5];
+sum(nums); // [[1, 2, 3, 4, 5]] 要素1つになってしまう
+sum(...nums); // (5) [1, 2, 3, 4, 5] 展開できる
