@@ -39,11 +39,26 @@ sum(...nums); // (5) [1, 2, 3, 4, 5] 展開できる
 
 const arr = ['taku', 25, 'man', ['music', 'travel']];
 let [name, age] = arr;
-console.log(name, age); // taku 25
+// console.log(name, age); // taku 25
 
 let [, , gender] = arr;
-console.log(gender); // man
+// console.log(gender); // man
 
 let [, , , [, hobby2]] = arr;
-console.log(hobby2); // travel
+// console.log(hobby2); // travel
+
+let items = [0, 1, 2];
+items.push(3, 4);     // 右側に増やす
+console.log(items);   // (5) [0, 1, 2, 3, 4]
+items.pop();          // 右側を1つ削除
+// console.log(items.pop()); 削除した値を返す
+console.log(items);   // (4) [0, 1, 2, 3]
+items.unshift(-1);    // 左側に増やす
+console.log(items);   // (5) [-1, 0, 1, 2, 3]
+items.shift();        // 左側を1つ削除
+// console.log(items.shift()); 削除した値を返す
+console.log(items);   // (4) [0, 1, 2, 3]
+
+
+
 
