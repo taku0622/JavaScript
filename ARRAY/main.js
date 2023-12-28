@@ -24,15 +24,26 @@ let arrayLikeObj = {
 // let fruits = ['apple', , 'banana', , 'grape'];
 let fruits = Array.of('apple', 'banana', 'grape');
 for (const fruit of fruits) { // undefinedを含める。
-  console.log(fruit); // apple \n undefined \n banana \n undefined \n grape
+  // console.log(fruit); // apple \n undefined \n banana \n undefined \n grape
 }
 for (const key in fruits) { // undefinedを含めない。
-  console.log(fruits[key]); // apple \n banana \n grape
+  // console.log(fruits[key]); // apple \n banana \n grape
 }
 
 let sum = (...nums) => {
-  console.log(nums);
+  // console.log(nums);
 }
 let nums = [1, 2, 3, 4, 5];
 sum(nums); // [[1, 2, 3, 4, 5]] 要素1つになってしまう
 sum(...nums); // (5) [1, 2, 3, 4, 5] 展開できる
+
+const arr = ['taku', 25, 'man', ['music', 'travel']];
+let [name, age] = arr;
+console.log(name, age); // taku 25
+
+let [, , gender] = arr;
+console.log(gender); // man
+
+let [, , , [, hobby2]] = arr;
+console.log(hobby2); // travel
+
