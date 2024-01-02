@@ -61,6 +61,13 @@ let arrayLikeObj = {
   length: 2,
 };
 const array = Array.from(arrayLikeObj);
-console.log(array);
+// console.log(array);
+
+items = [0, 1, 2];
+items.splice(1, 1, 5, 6);
+// 1番目から1つを5に置き換える。6も追加する。
+console.log(items); // [0, 5, 6, 2]
+
+
 
 
