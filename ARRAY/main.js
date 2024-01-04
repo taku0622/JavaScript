@@ -99,6 +99,15 @@ items = [0, 1, 2];
 result = items.map((item, index, array) => { // 要素、インデックス、配列を参照できる
   return item * 10;
 });
-console.log(result); // [0, 10, 20] 
+// console.log(result); // [0, 10, 20] 
 
+items = [0, 1, [2]];
+result = items.flat();
+console.log(result); // [0, 1, 2]
+items = [0, 1, [2, [3, [4]]]];
+result = items.flat(3); //引数に深さを入れる。デフォは1
+console.log(result); // [[0, 1, 2, 3, 4]
 
+items = [0, 1, 2];
+result = items.flatMap((item) => [item, item * 10]); // mapしてflatする
+console.log(result); // [0, 0, 1, 10, 2, 20]
