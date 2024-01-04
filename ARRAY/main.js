@@ -90,6 +90,11 @@ result = items.indexOf('banana', 2); // 2番目から最初のインデックス
 console.log(result); // 3
 result = items.indexOf('peach'); // ない場合-1を返す。
 console.log(result); // -1
+result = items.lastIndexOf('banana'); // 後ろから最初のインデックスを返す。
+console.log(result); // 3
+result = items.includes('peach'); // ある場合true、ない場合falseを返す。
+console.log(result); // false
+
 
 
 
