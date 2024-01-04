@@ -63,10 +63,14 @@ let arrayLikeObj = {
 const array = Array.from(arrayLikeObj);
 // console.log(array);
 
-items = [10, , , undefined, "", , 3, 2, 5, 0];
-items.sort() // 並び替える。
-console.log(items); // ['', 0, 10, 2, 3, 5, undefined, 空 × 3]
+items = [0, 1, 2, 3, 4];
+let result = items.slice(2); // 2番目から最後までを切り取る。
+// console.log(result); // [2, 3, 4]
+result = items.slice(2, 4); // 2番目から4番目未満を切り取る。
+// console.log(result); // [2, 3]
 
-
-
+items = [0, 1, 2];
+result = items.concat([3, 4, 5], 6, [7, 8, 9]);
+console.log(result);
+// [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
