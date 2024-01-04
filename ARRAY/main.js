@@ -123,7 +123,15 @@ result = items.reduce((previousItem, item) => { // 引数は4つ設定できる�
   return previousItem + item // 配列の和を求める。
 }, 0); // itemが0番目の「1」とき、この「0」をpreviousItemとする。 
 // 「0」も省略できる。
-console.log(result); // 6
+// console.log(result); // 6
 
+items = ['apple', 'banana', 'grape', 'banana'];
+result = items.find((item) => {
+  return item === 'banana'; // tureの場合、ループ終了して要素を返す。なかった場合undefined
+});
+console.log(result); // banana
 
-
+result = items.findIndex((item) => {
+  return item === 'banana'; // tureの場合、ループ終了して要素のインデックスを返す。なかった場合-1
+});
+console.log(result); // 1  
