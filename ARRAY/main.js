@@ -146,3 +146,11 @@ result = items.some((item) => {
   return item === 3 // 全要素のうち1つでもtrueがあれば、trueを返す。
 });
 // console.log(result); // true
+
+items = ['apple', 'banana', 'grape'];
+let count = 0;
+result = items.forEach((item, index, array) => {
+  count++; // 単純に要素を関数に入れるだけで、undefinedを返す。
+});
+console.log(result); // undefined
+console.log(count);  // 3
