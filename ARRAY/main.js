@@ -85,16 +85,20 @@ result = items.join('-'); // ハイフンでつなげる
 
 items = ['apple', 'banana', 'grape', 'banana'];
 result = items.indexOf('banana'); // 最初のインデックスを返す。
-console.log(result); // 1
+// console.log(result); // 1
 result = items.indexOf('banana', 2); // 2番目から最初のインデックスを返す。
-console.log(result); // 3
+// console.log(result); // 3
 result = items.indexOf('peach'); // ない場合-1を返す。
-console.log(result); // -1
+// console.log(result); // -1
 result = items.lastIndexOf('banana'); // 後ろから最初のインデックスを返す。
-console.log(result); // 3
+// console.log(result); // 3
 result = items.includes('peach'); // ある場合true、ない場合falseを返す。
-console.log(result); // false
+// console.log(result); // false
 
-
+items = [0, 1, 2];
+result = items.map((item, index, array) => { // 要素、インデックス、配列を参照できる
+  return item * 10;
+});
+console.log(result); // [0, 10, 20] 
 
 
