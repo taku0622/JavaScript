@@ -139,6 +139,10 @@ result = items.findIndex((item) => {
 
 items = [1, 2, 3];
 result = items.every((item) => {
-  return previousItem + item // 全要素がtrue
+  return item < 5 // 全要素がtrueの場合、trueを返す。
 });
-console.log(result);
+// console.log(result); // true
+result = items.some((item) => {
+  return item === 3 // 全要素のうち1つでもtrueがあれば、trueを返す。
+});
+// console.log(result); // true
