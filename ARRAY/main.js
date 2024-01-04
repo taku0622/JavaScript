@@ -64,8 +64,8 @@ const array = Array.from(arrayLikeObj);
 // console.log(array);
 
 items = [0, 1, 2, 4, 5];
-items.fill(2, 1, 3); // 1から3番目を2で埋める
-console.log(items); // [0, 2, 2, 2, 2]
+items.reverse() // 順番が反転する
+console.log(items); // [5, 4, 2, 1, 0]
 
 
 
