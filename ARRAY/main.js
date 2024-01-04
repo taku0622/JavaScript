@@ -63,9 +63,9 @@ let arrayLikeObj = {
 const array = Array.from(arrayLikeObj);
 // console.log(array);
 
-items = [0, 1, 2, 4, 5];
-items.reverse() // 順番が反転する
-console.log(items); // [5, 4, 2, 1, 0]
+items = [10, , , undefined, "", , 3, 2, 5, 0];
+items.sort() // 並び替える。
+console.log(items); // ['', 0, 10, 2, 3, 5, undefined, 空 × 3]
 
 
 
