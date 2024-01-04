@@ -116,7 +116,14 @@ items = [0, 1, 2, 3, 4, 5, 6];
 result = items.filter((item) => {
   return item > 2 // trueの場合はresultへ、falseは削除
 });
-console.log(result); // [3, 4, 5, 6]
+// console.log(result); // [3, 4, 5, 6]
+
+items = [1, 2, 3];
+result = items.reduce((previousItem, item) => { // 引数は4つ設定できる。
+  return previousItem + item // 配列の和を求める。
+}, 0); // itemが0番目の「1」とき、この「0」をpreviousItemとする。 
+// 「0」も省略できる。
+console.log(result); // 6
 
 
 
