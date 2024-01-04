@@ -127,11 +127,18 @@ result = items.reduce((previousItem, item) => { // 引数は4つ設定できる�
 
 items = ['apple', 'banana', 'grape', 'banana'];
 result = items.find((item) => {
-  return item === 'banana'; // tureの場合、ループ終了して要素を返す。なかった場合undefined
+  return item === 'banana'; // trueの場合、ループ終了して要素を返す。なかった場合undefined
 });
-console.log(result); // banana
+// console.log(result); // banana
 
 result = items.findIndex((item) => {
-  return item === 'banana'; // tureの場合、ループ終了して要素のインデックスを返す。なかった場合-1
+  return item === 'banana'; // trueの場合、ループ終了して要素のインデックスを返す。なかった場合-1
 });
-console.log(result); // 1  
+// console.log(result); // 1
+
+
+items = [1, 2, 3];
+result = items.every((item) => {
+  return previousItem + item // 全要素がtrue
+});
+console.log(result);
