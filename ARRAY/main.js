@@ -71,6 +71,14 @@ result = items.slice(2, 4); // 2番目から4番目未満を切り取る。
 
 items = [0, 1, 2];
 result = items.concat([3, 4, 5], 6, [7, 8, 9]);
-console.log(result);
+// console.log(result);
 // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
+
+items = ['a', 'b', 'c'];
+result = items.join();
+console.log(result); // a,b,c
+result = items.join(''); // 空文字でつなげる
+console.log(result); // abc
+result = items.join('-'); // ハイフンでつなげる
+console.log(result); // a-b-c
