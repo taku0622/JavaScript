@@ -77,8 +77,19 @@ result = items.concat([3, 4, 5], 6, [7, 8, 9]);
 
 items = ['a', 'b', 'c'];
 result = items.join();
-console.log(result); // a,b,c
+// console.log(result); // a,b,c
 result = items.join(''); // 空文字でつなげる
-console.log(result); // abc
+// console.log(result); // abc
 result = items.join('-'); // ハイフンでつなげる
-console.log(result); // a-b-c
+// console.log(result); // a-b-c
+
+items = ['apple', 'banana', 'grape', 'banana'];
+result = items.indexOf('banana'); // 最初のインデックスを返す。
+console.log(result); // 1
+result = items.indexOf('banana', 2); // 2番目から最初のインデックスを返す。
+console.log(result); // 3
+result = items.indexOf('peach'); // ない場合-1を返す。
+console.log(result); // -1
+
+
+
