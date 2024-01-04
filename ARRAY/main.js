@@ -152,5 +152,10 @@ let count = 0;
 result = items.forEach((item, index, array) => {
   count++; // 単純に要素を関数に入れるだけで、undefinedを返す。
 });
-console.log(result); // undefined
-console.log(count);  // 3
+// console.log(result); // undefined
+// console.log(count);  // 3
+
+items = ['apple', 'banana', 'grape'];
+console.log(items.at(0)); // apple
+console.log(items.at(-1)); // grape
+//items[0]と同じ。加えて「-1」も対応。
