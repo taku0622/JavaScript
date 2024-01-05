@@ -21,5 +21,6 @@ console.log(0b10001110); // 0bは2進数を表す。142
 
 
 console.log(Number.MAX_VALUE); // 1.7976931348623157e+308
+console.log(Number.MAX_SAFE_INTEGER); // 9007199254740991 安全に四則演算ができる最大値
 
-console.log(Number.MAX_SAFE_INTEGER);
+console.log(0.1 + 0.2); // 0.30000000000000004　※どちらも2新進
