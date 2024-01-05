@@ -51,3 +51,8 @@ result = Number.parseInt('1010', 2); // 数値変換(2進数→10進数)
 
 // // min() 引数の中の最大値を出力
 // console.log(Math.min(3, 5, 12, 8, 4,)); // 3
+
+let bigInt = 1234567890n;
+// bigInt = BigInt(123456789); // 他の宣言方法①
+// bigInt = BigInt('123456789'); // 他の宣言方法②
+console.log(typeof bigInt); // bigint
