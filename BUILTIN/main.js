@@ -55,8 +55,17 @@ result = Number.parseInt('1010', 2); // 数値変換(2進数→10進数)
 let bigInt = 1234567890n;
 // bigInt = BigInt(123456789); // 他の宣言方法①
 // bigInt = BigInt('123456789'); // 他の宣言方法②
-console.log(typeof bigInt); // bigint
+// console.log(typeof bigInt); // bigint
 
 bigInt = 9007199254740991n + 9007199254740991n
-console.log(bigInt); // 18014398509481982n
+// console.log(bigInt); // 18014398509481982n
 // Number型のNumber.MAX_SAFE_INTEGERを超えても計算可能
+
+let date = new Date();
+console.log(date); // Fri Jan 05 2024 18:14:37 GMT+0900 (日本標準時)
+console.log(date.getTime()); // 1704446145874
+console.log(date.getFullYear()); // 2024
+console.log(date.getMonth()); // 0 ※0始まり(1月)
+console.log(date.getDate()); // 5
+console.log(date.getDay()); // 5 ※0始まり(金曜日)
+
