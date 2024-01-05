@@ -25,29 +25,29 @@ result = Number.parseInt('1010', 2); // 数値変換(2進数→10進数)
 
 // console.log(0.1 + 0.2); // 0.30000000000000004　※どちらも2新進
 
-// floor() 負の方に合わせる
-console.log(Math.floor(3.6)); // 3
-console.log(Math.floor(3.2)); // 3
-console.log(Math.floor(-3.6)); // -4
-console.log(Math.floor(-3.2)); // -4
+// // floor() 負の方に合わせる
+// console.log(Math.floor(3.6)); // 3
+// console.log(Math.floor(3.2)); // 3
+// console.log(Math.floor(-3.6)); // -4
+// console.log(Math.floor(-3.2)); // -4
 
-// trunc() 切り捨て
-console.log(Math.trunc(3.6)); // 3
-console.log(Math.trunc(3.2)); // 3
-console.log(Math.trunc(-3.6)); // -3
-console.log(Math.trunc(-3.2)); // -3
+// // trunc() 切り捨て
+// console.log(Math.trunc(3.6)); // 3
+// console.log(Math.trunc(3.2)); // 3
+// console.log(Math.trunc(-3.6)); // -3
+// console.log(Math.trunc(-3.2)); // -3
 
-// round() 四捨五入
-console.log(Math.round(3.2)); // 3
-console.log(Math.round(3.5)); // 4
-console.log(Math.round(-3.4)); // -3
-console.log(Math.round(-3.5)); // -3
+// // round() 四捨五入
+// console.log(Math.round(3.2)); // 3
+// console.log(Math.round(3.5)); // 4
+// console.log(Math.round(-3.4)); // -3
+// console.log(Math.round(-3.5)); // -3
 
-// random() 0 < 1までの値をランダム出力
-console.log(Math.random()); // 0.13763632157163386
+// // random() 0 < 1までの値をランダム出力
+// console.log(Math.random()); // 0.13763632157163386
 
-// max() 引数の中の最大値を出力
-console.log(Math.max(3, 5, 12, 8, 4, 5)); // 12
+// // max() 引数の中の最大値を出力
+// console.log(Math.max(3, 5, 12, 8, 4, 5)); // 12
 
-// min() 引数の中の最大値を出力
-console.log(Math.min(3, 5, 12, 8, 4,)); // 3
+// // min() 引数の中の最大値を出力
+// console.log(Math.min(3, 5, 12, 8, 4,)); // 3
