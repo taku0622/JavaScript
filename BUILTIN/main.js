@@ -14,13 +14,19 @@ result = (10).toString(2); // 文字列に変換(2進数)
 result = Number.parseInt('1010', 2); // 数値変換(2進数→10進数)
 // console.log(result); // 10
 
-console.log(0b10001110); // 0bは2進数を表す。142
+// console.log(0b10001110); // 0bは2進数を表す。142
 // console.log(0o3243); // 0oは8進数を表す。1699
 // console.log(0xf2f); // 0xは16進数を表す。3887
 // console.log(1.3e5); // eは10を表す。1.3 * 10^5 = 130000
 
 
-console.log(Number.MAX_VALUE); // 1.7976931348623157e+308
-console.log(Number.MAX_SAFE_INTEGER); // 9007199254740991 安全に四則演算ができる最大値
+// console.log(Number.MAX_VALUE); // 1.7976931348623157e+308
+// console.log(Number.MAX_SAFE_INTEGER); // 9007199254740991 安全に四則演算ができる最大値
 
-console.log(0.1 + 0.2); // 0.30000000000000004　※どちらも2新進
+// console.log(0.1 + 0.2); // 0.30000000000000004　※どちらも2新進
+
+// floor() 負の方に合わせる
+console.log(Math.floor(3.6)); // 3
+console.log(Math.floor(3.2)); // 3
+console.log(Math.floor(-3.6)); // -4
+console.log(Math.floor(-3.2)); // -4
