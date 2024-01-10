@@ -71,19 +71,19 @@ let date = new Date();
 
 let apple = 'I like apples';
 result = apple.slice(0, 5); // 切り取り
-console.log(result); // I lik
+// console.log(result); // I lik
 result = apple.trim(); // 文字列の前後に空白があった場合埋める
-console.log(result); // I like apples
+// console.log(result); // I like apples
 result = apple.split(' '); // 引数で区切って配列を返す
-console.log(result); // ['I', 'like', 'apples']
+// console.log(result); // ['I', 'like', 'apples']
 result = apple.replace('like', 'love'); // 引数を置き換える
-console.log(result); // I love apples
+// console.log(result); // I love apples
 result = apple.startsWith('I like'); // 引数で始まっているか
-console.log(result); // true
+// console.log(result); // true
 result = apple.endsWith('apples'); // 引数で終わっているか
-console.log(result); // true
+// console.log(result); // true
 result = apple.indexOf('apples'); // 何文字目かを返す
-console.log(result); // 7
+// console.log(result); // 7
 
 
 
