@@ -85,5 +85,8 @@ result = apple.endsWith('apples'); // 引数で終わっているか
 result = apple.indexOf('apples'); // 何文字目かを返す
 // console.log(result); // 7
 
-
-
+let regexp = new RegExp('apple');
+regexp = /apples/i; // 上記と同じ処理
+// 「i」大文字・小文字の区別しないオプション
+result = regexp.test('I like aPples'); // testメソッドで判定
+console.log(result);
