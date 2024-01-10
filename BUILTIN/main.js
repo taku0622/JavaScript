@@ -86,7 +86,28 @@ result = apple.indexOf('apples'); // 何文字目かを返す
 // console.log(result); // 7
 
 let regexp = new RegExp('apple');
-regexp = /apples/i; // 上記と同じ処理
-// 「i」大文字・小文字の区別しないオプション
-result = regexp.test('I like aPples'); // testメソッドで判定
-console.log(result);
+
+
+
+regexp = /apples\d/; // 「\d」applesの後に数字があるか
+result = regexp.test('I like apples2');
+console.log(result); // true
+
+regexp = /\s/; // 「\s」半角・全角スペース・改行1つ分
+result = regexp.test('I like apples2');
+console.log(result); // true
+
+regexp = /\w/; // 「\w」数字・アルファベット・アンスコのみOK
+result = regexp.test('I like apples2');
+console.log(result); // true
+
+regexp = /\w/; // 「\w」数字・アルファベット・アンスコのみOK
+result = regexp.test('I like apples2');
+console.log(result); // true
+
+// 上記の大文字版はそれ以外OKとなる。(NOTの意味)
+// 例）「\S」半角・全角スペース・改行1つ分以外OK
+
+regexp = /./; // 「.」改行以外のすべての文字OK
+result = regexp.test('I like apples2');
+console.log(result); // true
