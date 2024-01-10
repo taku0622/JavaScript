@@ -146,3 +146,7 @@ regexp = /a?/; // 0個以上
 regexp = /a*/; // あってもなくてもよい 
 result = regexp.test("aaaaa");
 console.log(result); // true
+
+regexp = /I like (apple|banana)/; // 「|」または
+result = regexp.test("I like banana");
+console.log(result); // true
