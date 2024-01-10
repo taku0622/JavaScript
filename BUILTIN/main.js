@@ -111,3 +111,8 @@ console.log(result); // true
 regexp = /./; // 「.」改行以外のすべての文字OK
 result = regexp.test('I like apples2');
 console.log(result); // true
+
+regexp = /./s;
+// 「s」フラグの付与により、改行を含め、すべての文字がOKとなる
+result = regexp.test('I like apples2');
+console.log(result); // true
