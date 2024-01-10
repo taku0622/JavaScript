@@ -140,3 +140,9 @@ console.log(result); // true
 regexp = /\d{3,5}/; // 「\d」が3個以上5以下
 result = regexp.test("1234");
 console.log(result); // true
+
+regexp = /a+/; // 1個以上
+regexp = /a?/; // 0個以上 
+regexp = /a*/; // あってもなくてもよい 
+result = regexp.test("aaaaa");
+console.log(result); // true
