@@ -194,6 +194,5 @@ console.log(result);
 
 // splitメソッド
 mail = 'test@test.com example@example.com'
-result = mail.replace(/@/g, '*'); // 値を置き換える。
-// result = mail.replaceAll('@', '*'); // この処理と全く同じ。
-console.log(result);
+result = mail.split(/\s/); // 「/s」で区切る
+console.log(result); // ['test@test.com', 'example@example.com']
