@@ -150,3 +150,17 @@ console.log(result); // true
 regexp = /I like (apple|banana)/; // 「|」または
 result = regexp.test("I like banana");
 console.log(result); // true
+
+regexp = /b[au]g/; // 「[]」aまたはu
+result = regexp.test("bug");
+console.log(result); // true
+
+// [] を使用する場合、中に以下の記号は使えない。
+// .*?+()|^$
+
+regexp = /b[a-z]g/; // 辞書順のaからzまですべて使える。
+result = regexp.test("big");
+console.log(result); // true
+
+regexp = /[0-9a-zA-Z_]/; // 「\w」と同じ意味
+regexp = /[^0-9a-zA-Z_]/; // 先頭にキャレットをつけると「\W」と同じ意味
