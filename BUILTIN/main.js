@@ -116,3 +116,27 @@ regexp = /./s;
 // 「s」フラグの付与により、改行を含め、すべての文字がOKとなる
 result = regexp.test('I like apples2');
 console.log(result); // true
+
+regexp = /\./; // 文字列としての「.」の場合、エスケープする(「\」をつける)
+result = regexp.test('I like apples2.');
+console.log(result); // true
+
+regexp = /\\/; // 文字列としての「\」
+result = regexp.test("\\");
+console.log(result); // true
+
+regexp = /^apple/; // 「^」キャレット：位置を表す。先頭
+result = regexp.test("apple is red");
+console.log(result); // true
+
+regexp = /^apple$/m; // 「m」フラグで改行した際の判定になる
+result = regexp.test("this is \napple\n pie");
+console.log(result); // true
+
+regexp = /a{5}/; // 「{}」文字数を表す。
+result = regexp.test("aaaaa");
+console.log(result); // true
+
+regexp = /\d{3,5}/; // 「\d」が3個以上5以下
+result = regexp.test("1234");
+console.log(result); // true
