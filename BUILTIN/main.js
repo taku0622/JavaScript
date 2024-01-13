@@ -291,3 +291,6 @@ console.log(map);
 // マップ→オブジェクト変換
 person = Object.fromEntries(map);
 console.log(person);
+
+
+
