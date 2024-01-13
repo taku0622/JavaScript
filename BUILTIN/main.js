@@ -221,10 +221,8 @@ result = new Intl.DateTimeFormat('ja-JP-u-ca-japanese', {
 }).format(new Date());
 console.log(result); // 令和6年1月13日
 
-result = new Intl.DateTimeFormat('ja-JP-u-ca-japanese', {
-  era: 'long',
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-}).format(new Date());
-console.log(result); // 令和6年1月13日
+result = new Intl.NumberFormat('ja-JP', {
+  style: 'currency',
+  currency: 'JPY',
+}).format(10000);
+console.log(result); // ￥10,000
