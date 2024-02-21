@@ -10,5 +10,5 @@ console.log(result);
 
 // 入力欄、ok/cancelボタンのダイアログ
 result = prompt('name');
-// result
+// resultには入力欄の値が返る
 console.log(result);
