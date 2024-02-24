@@ -48,7 +48,12 @@
 // // クエリ(?)が付いていた場合、それ以降を返す。
 // console.log(location.search);
 
-// googleへ移動。href省略も可。
-location.href = 'https://google.com'
-// location = 'https://google.com'
+// googleへ移動。href省略も可。assignメソッドも同じ
+location.href = 'https://google.com';
+// location = 'https://google.com';
+// location.assign('https://google.com');
 
+// ページA → B → C(↓のURL)の場合、Bの履歴を削除する。
+// ページA → C になる。
+// すなわち、ブラウザの戻るを押すと、ページAになる。
+location.replace('https://github.com/taku0622');
