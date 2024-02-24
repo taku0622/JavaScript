@@ -68,5 +68,5 @@ history.forward
 history.go(-3)
 // 戻るボタン
 history.back
-// 
+// リロードせず、URLだけを変える(複雑なJSアプリに便利)
 history.pushState(null, null, '/hello');
