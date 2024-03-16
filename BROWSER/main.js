@@ -71,3 +71,18 @@
 // // リロードせず、URLだけを変える(複雑なJSアプリに便利)
 // history.pushState(null, null, '/hello');
 
+let url = new URL('https://developer.mozilla.org/ja/');
+url.search = 'q=javascript';
+url.searchParams.set('page', '2');
+url.searchParams.append('page', '3'); // 同じキーを追加する場合
+console.log(url); // search:"?q=javascript&page=2&page=3"
+let result = url.searchParams.get('page');
+console.log(result); // 2 先に該当した値が返る。
+result = url.searchParams.getAll('page');
+console.log(result); // ['2', '3']　該当した値が全て返る。
+result = url.searchParams.has('page');
+console.log(result); // true 該当した値があるか
+result = url.searchParams.sort();　// serchParamsのキーをソートする
+for (const [key, value] of url.searchParams) {
+  console.log(key, value); // page 2 ... 
+}
