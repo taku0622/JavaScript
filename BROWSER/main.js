@@ -86,3 +86,20 @@
 // for (const [key, value] of url.searchParams) {
 //   console.log(key, value); // page 2 ...
 // }
+
+// (コールバック関数, 時間(ms))
+// let timeId = setTimeout(() => {
+//   console.log("hello");
+// }, 1000); // 1秒後に実行
+// console.log(timeId);
+// clearTimeout(timeId);
+
+// 時間(ms)ごとに実行
+let timeId = setInterval(() => {
+  console.log("hello");
+}, 1000); // 1秒後に実行)
+
+// intervalの中断
+setTimeout(() => {
+  clearInterval(timeId);
+}, 3000)
