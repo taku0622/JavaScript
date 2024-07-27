@@ -38,10 +38,24 @@ result = document.body.previousElementSibling;
 
 // 要素一覧取得 HTMLコレクションインタフェース
 colections = document.body.children;
-
 // ノード一覧取得 nodeリストインターフェース
 nodes = document.body.childNodes;
+// console.dir(colections);
+// console.dir(nodes);
 
-// console.dir(result);
-console.dir(colections);
-console.dir(nodes);
+// cssセレクタを指定する(cssに指定するやつ、ex) h1, #title, .hello)
+// document配下(子孫)すべてから探す
+// 複数マッチした場合、一番最初にマッチしたもの
+result = document.querySelector('#title');
+result = document.querySelector('.hello');
+result = document.querySelector('p');
+
+// マッチしたもの全てを返す
+result = document.querySelectorAll('p');
+
+// 祖先(自分も含む)要素取得
+result = document.body.closest('html');
+
+
+
+console.dir(result);
